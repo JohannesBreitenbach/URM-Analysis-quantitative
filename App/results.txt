@@ -1,0 +1,35 @@
+Counter group (active days per participant)
+n = 10
+values = 7, 6, 7, 6, 6, 7, 6, 7, 3, 5
+mean = 6.00
+median = 6.00
+sd = 1.25
+min = 3.00
+q1 (25%) = 6.00
+q3 (75%) = 7.00
+iqr = 1.00
+max = 7.00
+
+Journal group (active days per participant)
+n = 8
+values = 4, 3, 3, 1, 6, 2, 4, 4
+mean = 3.38
+median = 3.50
+sd = 1.51
+min = 1.00
+q1 (25%) = 2.75
+q3 (75%) = 4.00
+iqr = 1.25
+max = 6.00
+
+Welch two-sample t-test
+mean difference (Counter - Journal) = 2.62 days
+t(13.60) = 3.96, p = 0.0015
+95% CI for mean difference = [1.20, 4.05]
+
+Mann–Whitney U test (two-sided)
+U = 72, p = 0.0031
+
+Effect sizes
+Hedges' g = 1.83
+Common-language effect size P(Counter > Journal) = 0.90
