@@ -1,0 +1,9 @@
+group_type,group,n,mean_entries,sd_entries
+condition,counter,10,11.700000,3.335000
+condition,journal,7,3.714286,1.253566
+gender,female,9,9.666667,5.361903
+gender,male,8,7.000000,4.000000
+condition_x_gender,counter×female,5,14.000000,1.870829
+condition_x_gender,counter×male,5,9.400000,2.880972
+condition_x_gender,journal×female,4,4.250000,1.258306
+condition_x_gender,journal×male,3,3.000000,1.000000
