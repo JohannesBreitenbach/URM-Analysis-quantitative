@@ -9,8 +9,7 @@ Participant files are named `<MOTHER_CODE>.csv` (e.g., `A016S.csv`). One file eq
 ---
 
 ## File Structure
-
-\```
+```
 URM-Analysis-quantitative/
 │
 ├── App/                            # Participant data exported from the apps
@@ -22,20 +21,21 @@ URM-Analysis-quantitative/
 ├── Questionnaire/                  # Questionnaire response data
 │   └── questionnaire_data.csv      # Semicolon-delimited, decimal comma
 │
-├── clean_counter_data.py
-├── analysis_motivation.py
-├── compare_total_entries.py
-├── make_boxplot_active_days.py
-├── diagram_compare_active_days.py
-├── active_days_gender.py
-├── entries_gender.py
-├── diagram_average_WHO5.py
-├── significance_test.py
-├── stats_active_days_alpha05.py
-├── FTI_active_days.py
+├── clean_counter_data.py           # Normalise raw Counter exports
+├── analysis_motivation.py          # Active participants per date per condition
+├── compare_total_entries.py        # Average total entries per participant per condition
+├── make_boxplot_active_days.py     # Boxplot: unique active days
+├── diagram_compare_active_days.py  # Line plot: daily active rate over study period
+├── active_days_gender.py           # Active days by condition and gender
+├── entries_gender.py               # Total entries by condition and gender
+├── diagram_average_WHO5.py         # WHO-5 wellbeing trajectories
+├── significance_test.py            # Welch t-test, Mann-Whitney U, Hedges' g, CLES
+├── stats_active_days_alpha05.py    # Same tests with alpha = 0.05 decisions
+├── FTI_active_days.py              # Pearson r: active days vs. Future Intention to Use
 │
 └── README.md
-\```
+```
+``` *(closing fence for the code block above)*
 
 ---
 
