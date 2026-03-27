@@ -12,30 +12,28 @@ Participant files are named `<MOTHER_CODE>.csv` (e.g., `A016S.csv`). One file eq
 ```
 URM-Analysis-quantitative/
 │
-├── App/                            # Participant data exported from the apps
-│   ├── Counter/                    # Counter app CSV exports (one file per participant)
+├── App/
+│   ├── data_counter/                    # Raw Counter app CSV exports (one file per participant)
 │   │   └── <MOTHER_CODE>.csv
-│   └── Journal/                    # Journal app CSV exports (one file per participant)
-│       └── <MOTHER_CODE>.csv
+│   ├── data_counter_clean/              # Output of clean_counter_data.py
+│   │   └── <MOTHER_CODE>_clean.csv
+│   ├── data_journal/                    # Journal app CSV exports (one file per participant)
+│   │   └── <MOTHER_CODE>.csv
+│   │
+│   ├── analysis_motivation.py           # Active participants per date per condition → daily_participants_compare.csv
+│   ├── boxplot_active_days.py           # Boxplot: unique active days → active_days_boxplot.png
+│   ├── clean_counter_data.py            # Normalise raw Counter exports → data_counter_clean/
+│   ├── compare_total_entries.py         # Average total entries per participant → total_entries_compare.csv
+│   ├── daily_active_rate_diagram.py     # Daily active rate line plot → daily_active_rate_by_day_combined.png/.pdf
+│   ├── significance_test.py             # Welch t-test, Mann-Whitney U, Hedges' g, CLES
+│   └── stats_active_days_alpha05.py     # Same tests with explicit alpha = 0.05 decisions
 │
-├── Questionnaire/                  # Questionnaire response data
-│   └── questionnaire_data.csv      # Semicolon-delimited, decimal comma
-│
-├── clean_counter_data.py           # Normalise raw Counter exports
-├── analysis_motivation.py          # Active participants per date per condition
-├── compare_total_entries.py        # Average total entries per participant per condition
-├── make_boxplot_active_days.py     # Boxplot: unique active days
-├── diagram_compare_active_days.py  # Line plot: daily active rate over study period
-├── active_days_gender.py           # Active days by condition and gender
-├── entries_gender.py               # Total entries by condition and gender
-├── diagram_average_WHO5.py         # WHO-5 wellbeing trajectories
-├── significance_test.py            # Welch t-test, Mann-Whitney U, Hedges' g, CLES
-├── stats_active_days_alpha05.py    # Same tests with alpha = 0.05 decisions
-├── FTI_active_days.py              # Pearson r: active days vs. Future Intention to Use
+├── Questionnaire/                       # Questionnaire response data
+│   └── <questionnaire_data>.csv         # Semicolon-delimited, decimal comma
 │
 └── README.md
 ```
-``` *(closing fence for the code block above)*
+``` *(close fence)*
 
 ---
 
