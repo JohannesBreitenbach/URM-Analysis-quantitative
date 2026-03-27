@@ -40,9 +40,6 @@ URM-Analysis-quantitative/
 ---
 
 ## Scripts
-... (unchanged)
-
-## Scripts
 
 | Script | Question answered |
 |---|---|
