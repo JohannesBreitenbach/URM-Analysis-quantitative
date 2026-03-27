@@ -28,8 +28,20 @@ URM-Analysis-quantitative/
 │   ├── significance_test.py             # Welch t-test, Mann-Whitney U, Hedges' g, CLES
 │   └── stats_active_days_alpha05.py     # Same tests with explicit alpha = 0.05 decisions
 │
-├── Questionnaire/                       # Questionnaire response data
-│   └── <questionnaire_data>.csv         # Semicolon-delimited, decimal comma
+├── Questionnaire/                  # Questionnaire response data
+│   └── questionnaire_data.csv      # Semicolon-delimited, decimal comma
+│
+├── clean_counter_data.py           # Normalise raw Counter exports
+├── analysis_motivation.py          # Active participants per date per condition
+├── compare_total_entries.py        # Average total entries per participant per condition
+├── make_boxplot_active_days.py     # Boxplot: unique active days
+├── diagram_compare_active_days.py  # Line plot: daily active rate over study period
+├── active_days_gender.py           # Active days by condition and gender
+├── entries_gender.py               # Total entries by condition and gender
+├── diagram_average_WHO5.py         # WHO-5 wellbeing trajectories
+├── significance_test.py            # Welch t-test, Mann-Whitney U, Hedges' g, CLES
+├── stats_active_days_alpha05.py    # Same tests with alpha = 0.05 decisions
+├── FTI_active_days.py              # Pearson r: active days vs. Future Intention to Use
 │
 └── README.md
 ```
