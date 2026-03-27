@@ -29,8 +29,12 @@ URM-Analysis-quantitative/
 │   └── stats_active_days_alpha05.py     # Same tests with explicit alpha = 0.05 decisions
 │
 ├── Questionnaire/                  # Questionnaire response data
-│   └── questionnaire_data.csv      # Semicolon-delimited, decimal comma
-│
+│   ├── data_counter/                    # Raw Counter app CSV exports (one file per participant)
+│   │   └── <MOTHER_CODE>.csv
+│   ├── data_counter_clean/              # Output of clean_counter_data.py
+│   │   └── <MOTHER_CODE>_clean.csv
+│   ├── data_journal/                    # Journal app CSV exports (one file per participant)
+│   │   └── <MOTHER_CODE>.csv│
 ├── clean_counter_data.py           # Normalise raw Counter exports
 ├── analysis_motivation.py          # Active participants per date per condition
 ├── compare_total_entries.py        # Average total entries per participant per condition
